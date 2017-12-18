@@ -6,14 +6,12 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 import config
-from flask_bcrypt import Bcrypt
 
 ################
 #### config ####
 ################
 
 app = Flask(__name__)
-bcrypt = Bcrypt(app)
 app.config.from_object(config.DevelopmentConfig)
 db = SQLAlchemy(app)
 

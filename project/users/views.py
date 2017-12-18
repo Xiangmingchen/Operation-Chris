@@ -6,7 +6,7 @@ from flask import flash, redirect, render_template, request, \
     session, url_for, Blueprint
 from functools import wraps
 from project.form import LoginForm
-from project.models import User, bcrypt
+from project.models import User
 from project import db
 
 
